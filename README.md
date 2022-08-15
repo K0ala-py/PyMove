@@ -2,12 +2,12 @@
 # Moviment-Automation
 
 My project automates movements customized by you!
+
 ## Note
 
 - requires the python module "pyautogui"
-## Note
+- this program works on all operating systems
 
-- requires the python module "pyautogui"
 ## Installation
 
 You have need this library for use my script: 
