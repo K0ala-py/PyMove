@@ -19,4 +19,5 @@ pip install pyautogui
     
 ## Use
 
+- after finishing the program, you have to start it from the terminal with the name! "python <path> / <name> .py"
 - it's easy ;)
