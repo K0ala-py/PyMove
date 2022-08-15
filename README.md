@@ -14,7 +14,7 @@ You have need this library for use my script:
 
 ### Linux / Windows 
 ```bash
-pip install -r requirements.txt
+pip install pyautogui
 ```
     
 ## Use
