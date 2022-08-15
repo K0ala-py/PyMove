@@ -1,5 +1,5 @@
 
-# FasterSearch
+# Moviment-Automation
 
 My project automates movements customized by you!
 ## Note
