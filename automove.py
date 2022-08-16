@@ -21,7 +21,7 @@ else:
 x = 1
 y = 0
 while True:
-    key_choice = confirm('Keyboard or mouse?','FUNCTION',buttons=['move','time','mouse','write','Developer','Exit'])
+    key_choice = confirm('Select Function: ','FUNCTION',buttons=['move','time','mouse','write','Developer','Exit'])
     if x == 1:
         hotkey('win','d')
     x += 1
