@@ -21,12 +21,12 @@ else:
 x = 1
 y = 0
 while True:
-    key_choice = confirm('Keyboard or mouse?','FUNCTION',buttons=['keyboard','time','mouse','write','Developer','Exit'])
+    key_choice = confirm('Keyboard or mouse?','FUNCTION',buttons=['move','time','mouse','write','Developer','Exit'])
     if x == 1:
         hotkey('win','d')
     x += 1
     #! KEYBOARD FUNCTION
-    if key_choice == 'keyboard':
+    if key_choice == 'move':
         if y == 0:
             alert(f'Positioned and click "{keyboard}"',title='Message key')
         key.wait(keyboard)
