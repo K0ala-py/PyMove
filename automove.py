@@ -3,7 +3,7 @@ import keyboard as key
 
 name = prompt('Welcome to my App for move and automate your pc!\nName of the new project!',title='App')
 file = open(f'{name}.py','w')
-file.write('import pyautogui as p\np.hotkey("win","d")\n')
+file.write('import pyautogui as p\nimport time\np.hotkey("win","d")\n')
 
 #? KEYBOARD KEY
 keyboard_choice = confirm('For confirm your destination enter "ctrl+k"',title='Settings keyboard',buttons=['Ok','Change key'])
@@ -21,7 +21,7 @@ else:
 x = 1
 y = 0
 while True:
-    key_choice = confirm('Keyboard or mouse?','FUNCTION',buttons=['keyboard','mouse','write','Developer','Exit'])
+    key_choice = confirm('Keyboard or mouse?','FUNCTION',buttons=['keyboard','time','mouse','write','Developer','Exit'])
     if x == 1:
         hotkey('win','d')
     x += 1
@@ -38,6 +38,14 @@ while True:
         file.write('p.click()\n')
         y += 1
 
+    #! TIME FUNCTION
+    if key_choice == 'time':
+        time_sleep = prompt('How much time?')
+        if time_sleep == '':
+            time_sleep = 0
+        file.write(f'time.sleep({int(time_sleep)})\n')
+
+    #! WRITE FUNCTION
     if key_choice == 'write':
         file.write('p.click()\n')
         text = prompt('Enter text: ','Settings')
@@ -75,6 +83,6 @@ while True:
             line = prompt('Line: (pyautogui as p): ','Developer')
             file.write(f'{line}\n')
 
-    # EXIT
+    #! EXIT
     if key_choice == 'Exit':
         exit()
