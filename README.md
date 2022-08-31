@@ -1,5 +1,5 @@
 
-# Moviment-Automation
+# PyMove
 
 My project automates movements customized by you!
 
