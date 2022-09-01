@@ -58,7 +58,11 @@ def main():
 
                 if keyboard_choice == 'Time to move':
                     time = prompt(f'Enter Time:\nNow is {time}','SETTINGS')
-                    time = int(time)
+                    try:
+                        time = int(time)
+                    except:
+                        main()
+
 
                 if keyboard_choice == 'Back':
                     main()
@@ -165,6 +169,14 @@ def main():
 
         #! EXIT
         if key_choice == 'Exit':
+            #os.system(f'pyinstaller -F C:\\Users\\user\\Desktop\\{name}.py')
+            #os.system(f'del /f C:\\Users\\user\\Desktop\\{name}.spec')
+            #os.system('rmdir /q /s C:\\Users\\user\\Desktop\\build')
+            #os.system(f'move C:\\Users\\user\\Desktop\\dist\\{name}.exe C:\\Users\\user\\Desktop')
+            #os.system('rmdir /q /s C:\\Users\\user\\Desktop\\dist')
+            #os.system('rmdir /q /s C:\\Users\\user\\Desktop\\__pycache__')
+            #os.system(f'del /f C:\\Users\\user\\Desktop\\{name}.py')
+            #alert('Done','Exe convert')
             exit()
 
 main()
